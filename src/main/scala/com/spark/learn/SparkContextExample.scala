@@ -1,23 +1,21 @@
 package com.spark.learn
 
-import com.sparkbyexamples.spark.dataframe.functions.SortExample.spark
+
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.{SQLContext, SparkSession}
 
 object SparkContextExample extends App{
-
+  System.setProperty("hadoop.home.dir", "D:\\hadoop2.6.1")
   val spark = SparkSession.builder()
     .master("local[1]")
-    .appName("SparkByExamples.com")
+    .appName("SaratLearn")
     .getOrCreate();
 
   spark.sparkContext.setLogLevel("ERROR")
 
 
   val sparkContext:SparkContext = spark.sparkContext
-  val sqlCon:SQLContext = spark.sqlContext
 
-  val sqlContext = new org.apache.spark.sql.SQLContext(spark.sparkContext)
 
   println("First SparkContext:")
   println("APP Name :"+spark.sparkContext.appName);

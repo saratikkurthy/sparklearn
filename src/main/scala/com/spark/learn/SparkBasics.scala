@@ -14,9 +14,10 @@ object SparkBasics extends App
 
   val sqlDF=df.createOrReplaceTempView("Zipcodes")
   df.select("country", "city", "zipcode", "state")
-    .show(5)
-  spark.sql("SELECT count(zipcode), city FROM ZIPCODES group by city")
-    .show(5)
+    .show()
+
+  spark.sql("SELECT count(zipcode), city FROM ZIPCODES  group by city")
+    .show()
   /**df.printSchema()
   df.show()**/
 }

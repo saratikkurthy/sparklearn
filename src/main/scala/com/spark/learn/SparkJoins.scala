@@ -13,6 +13,10 @@ object SparkJoins extends App{
   val departmentsDF = spark.read.option("header", true)
     .csv("D:\\SparkLearningData\\CSV\\Department.CSV")
   val deptSQLDF = departmentsDF.createOrReplaceTempView("Departments")
-  spark.sql("SELECT e.emp_id,e.name from employees e inner join departments d on e.emp_dept_id=d.dept_id")
-    .show(5)
+
+  spark.sql("Select * from employees").show()
+  spark.sql("Select * from Departments").show()
+  
+  /***spark.sql("select * from employees e, Departments d where e.emp_dept_id == d.dept_id").show()*/
+
 }

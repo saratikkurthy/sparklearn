@@ -18,6 +18,6 @@ object SparkBasics extends App
 
   spark.sql("SELECT count(zipcode), city FROM ZIPCODES  group by city")
     .show()
-  /**df.printSchema()
-  df.show()**/
+  df.printSchema()
+  df.show()
 }

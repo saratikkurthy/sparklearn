@@ -1,0 +1,9 @@
+{
+	"name": "SaratDF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ed635d24-5d6a-4b8c-910b-b68753d60c3a",
+		"tenantId": "791b5363-fa9d-42a1-8b34-90ff81862f56"
+	}
+}

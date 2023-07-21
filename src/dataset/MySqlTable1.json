@@ -1,10 +1,6 @@
 {
 	"name": "MySqlTable1",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "MySql1",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "MySqlTable",
 		"schema": []

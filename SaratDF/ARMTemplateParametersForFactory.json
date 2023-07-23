@@ -10,6 +10,33 @@
 		},
 		"MySql1_connectionString": {
 			"value": ""
+		},
+		"linkedService1_clusterPassword": {
+			"value": ""
+		},
+		"linkedService1_clusterSshPassword": {
+			"value": ""
+		},
+		"linkedService1_servicePrincipalKey": {
+			"value": ""
+		},
+		"linkedService1_properties_typeProperties_hostSubscriptionId": {
+			"value": "91d9fe4f-ee4b-4dec-af3b-74d7c321f59a"
+		},
+		"linkedService1_properties_typeProperties_clusterResourceGroup": {
+			"value": "SaratLearningGroup"
+		},
+		"linkedService1_properties_typeProperties_servicePrincipalId": {
+			"value": "sparklearn"
+		},
+		"linkedService1_properties_typeProperties_tenant": {
+			"value": "791b5363-fa9d-42a1-8b34-90ff81862f56"
+		},
+		"Trigger_k75_properties_pipeline_parameters_windowStart": {
+			"value": "@trigger().outputs.windowStartTime"
+		},
+		"Trigger_k75_properties_pipeline_parameters_windowEnd": {
+			"value": "@trigger().outputs.windowEndTime"
 		}
 	}
 }

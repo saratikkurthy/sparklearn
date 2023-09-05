@@ -16,6 +16,7 @@ object SparkJoins extends App{
 
   spark.sql("Select * from employees").show()
   spark.sql("Select * from Departments").show()
+  employeesDF.select("name","year_joined").show()
   
   /***spark.sql("select * from employees e, Departments d where e.emp_dept_id == d.dept_id").show()*/
 

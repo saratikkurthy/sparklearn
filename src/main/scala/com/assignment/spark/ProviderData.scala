@@ -33,7 +33,7 @@ object ProviderData {
   val master = "local[1]"
   val appName = "Provider Insights"
   val outputProvFile = "E:\\SparkAssignment\\ProvidersPartVisit\\"
-  val outputVisitile = "E:\\SparkAssignment\\ProvidersPartVisit\\"
+  val outputVisitile = "E:\\SparkAssignment\\ProvidersMonthVisit\\"
 
   /**
    *
